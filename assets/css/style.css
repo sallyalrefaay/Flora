@@ -1,0 +1,657 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* start of header */
+/* start of nav */
+header nav{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 90px;
+    padding: 17px 70px;
+    background-color: #EFF8FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 69px;
+    height: 56px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li a{
+    font-weight: 500;
+    line-height: 19.36px;
+    color: #222222;
+    text-decoration: none;
+}
+
+header .login{
+    text-decoration: none;
+    width: 135px;
+    height: 38px;
+    border-radius: 6px;
+    border: none;
+    background-color: #025595;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav button{
+    display: none;
+    border: none;
+    background: none;
+}
+
+nav button img{
+    width: 26px;
+    height: 17px;
+}
+/* end of nav */
+
+/* start of hero */
+.hero{
+    height: 100vh;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.hero .text{
+    padding-left: 70px;
+}
+
+.hero h1{
+    max-width: 549px;
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: #16100D;
+}
+
+.hero p.desc{
+    max-width: 423px;
+    line-height: 1.6rem;
+    color: #16100D80;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.hero form{
+    max-width: 868px;
+    border: none;
+    border-radius: 16px;
+    background-color: #FFFFFFCC;
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px 58px;
+}
+
+.hero .card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0255951a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .icon img{
+    width: 30px;
+    height: 30px;
+}
+
+.hero .card h2{
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #16100D;
+}
+
+.hero .card p{
+    color: #16100D80;
+    line-height: 1.5rem;
+    margin-top: 10px;
+}
+/* end of hero */
+/* end of header */
+
+/* start of how it works section */
+.how-it-work{
+    padding: 0 70px;
+}
+
+.how-it-work h1{
+    margin-top: 100px;
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #16100D;
+}
+
+.how-it-work p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #16100D80;
+    margin-top: 15px;
+}
+
+.how-it-work .cards{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    gap: 43px;
+}
+
+.how-it-work .card{
+    width: 380px;
+    height: 255px;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.how-it-work .select-card{
+    width: 380px;
+    height: 255px;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: #025595;
+}
+
+.how-it-work h2{
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+    color: #16100D;
+}
+
+.how-it-work .select-card h2{
+    color: #FFFFFF;
+}
+
+.how-it-work .select-card p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+/* end of how it works section  */ 
+
+/* start of find dream house section */
+
+.dream-house .nav{
+    padding: 0 70px;
+    margin-top: 6.25rem;
+    height: 87px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.dream-house .nav h1{
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color: #16100D;
+}
+
+.dream-house .nav p{
+    font-size: 15px;
+    line-height: 26px;
+    color: #16100D80;
+    margin-top: 15px;
+}
+
+.dream-house .nav button{
+    width: 137px;
+    height: 45px;
+    padding: 13px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #025595;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F5F5F5;
+}
+
+.dream-house .cover{
+    padding: 0 70px;
+    height: 380px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.dream-house .cover .apartment{
+    width: 1056px;
+    height: 380px;
+}
+
+.dream-house .cover .price{
+    width: 340px;
+    height: 312px;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 16px;
+    background-color: #FFFFFFE5;
+    z-index: 1;
+    position: absolute;
+    right: 60rem;
+}
+
+.dream-house .price h2{
+    padding: 24px 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    color: #16100D;
+}
+
+.dream-house .price p{
+    color: #16100D;
+    font-size: 16px;
+    line-height: 19.36px;
+}
+
+.dream-house .icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dream-house .icon div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dream-house .location{
+    width: 277px;
+    padding-top: 85px;
+    display: flex;
+    gap: 10px;
+}
+/* end of find dream house section */
+
+/* start of most trending section */
+.most-trending{
+    padding: 0 70px;
+    margin-top: 100px;
+}
+
+.most-trending h1{
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color: #16100D;
+}
+
+.most-trending p{
+    font-size: 15px;
+    line-height: 26px;
+    color: #16100D80;
+    margin-top: 15px;
+}
+
+.most-trending .cards{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.most-trending .cards .card{
+    width: 382px;
+    height: 447px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #DDDDDD15;
+}
+
+.most-trending .cards .card img{
+    border-radius: 10px;
+}
+
+.most-trending .cards .card p{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.75rem;
+    color: #025595;
+}
+
+.most-trending .cards .card h2{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.8rem;
+    color: #222222;
+}
+
+.most-trending .card .location{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.most-trending .cards .card .location p{
+    font-size: 15px;
+    line-height: 1.63rem;
+    color: #22222280;
+}
+/* end of most trending section */
+
+/* start of Best Real Estate Deals section */
+.best-real{
+    padding: 0 70px;
+    margin-top: 6.25rem;
+}
+
+.best-real h1{
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: #16100D;
+}
+
+.best-real p{
+    font-size: 15px;
+    line-height: 26px;
+    color: #16100D80;
+    margin-top: 15px;
+}
+
+.best-real ul{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+.best-real ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #222222;
+}
+
+.best-real ul li.blue-border{
+    color: #025595;
+    border-bottom: 2px #025595 solid;
+}
+
+.best-real .cards{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.best-real .cards .card{
+    position: relative;
+} 
+
+.best-real .card .buttons{
+    padding-left: 15px;
+    position: absolute;
+    bottom: 90%;
+}
+
+.best-real .cards button{
+    padding: 1px 3px;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: 1px #FFFFFF solid;
+    border-radius: 5px;
+    background-color: #22222240;
+}
+/* end of Best Real Estate Deals section */
+
+/* start o footer */
+footer{
+    margin-top: 6.25rem;
+    padding: 0 70px;
+}
+
+footer .info{
+    padding-bottom: 20px;
+    border-bottom: 1px #22222210 solid; 
+    display: flex;
+    gap: 70px;
+}
+
+footer .info .desc{
+    width: 351px;
+}
+
+footer .desc p{
+    padding-top: 26px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #22222280;
+}
+
+footer .info h2{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    letter-spacing: 2%;
+    color: #222222;
+}
+
+footer .info ul{
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer .info ul li{
+    color: #222222;
+    font-size: 16px;
+    line-height: 19.36px;
+    letter-spacing: 2%;
+    list-style: none;
+}
+
+footer .our-location p{
+    padding: 16px 0;
+    font-size: 16px;
+    color: #222222;
+    line-height: 19.36px;
+    letter-spacing: 2%;
+}
+
+footer .our-location .twitter{
+    padding: 0 16px;
+}
+
+footer .copyright{
+    padding: 16px 16px 16px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .copyright p{
+    font-size: 14px;
+    line-height: 16.94px;
+    letter-spacing: 2%;
+    color: #222222;
+}
+
+footer .copyright ul{
+    display: flex;
+    gap: 20px;
+}
+
+footer .copyright ul li{
+    list-style: none;
+    font-size: 14px;
+    line-height: 16.94px;
+    letter-spacing: 2%;
+    color: #222222;
+}
+/* end of footer */
+
+
+@media screen and (max-width : 992px) {
+    html{
+        font-size: 9px;
+    }
+    header nav{
+        padding: 10px 20px;
+    }
+    header nav img{
+        width: 46px;
+        height: 35px;
+    }
+    nav .login , nav ul{
+        display: none;
+    }
+    nav button{
+        display: block;
+    }
+    nav button img{
+        width: 26px;
+        height: 17px;
+    }
+    .hero .text{
+        padding: 0;
+        margin-top: 70px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+    .hero form{
+        border-radius: 0;
+        padding-left: 20px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .hero h1 , .hero p.desc{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .how-it-work{
+        padding: 0 20px;
+    }
+    .how-it-work .cards{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .how-it-work .card , .how-it-work .select-card{
+        max-width: 320px;
+        padding: 15px;
+    }
+    .dream-house .nav{
+        padding: 0 21px;
+    }
+    .dream-house .nav button{
+        display: none;
+    }
+    .dream-house .cover{
+        padding: 0;
+    }
+    .dream-house .cover .apartment{
+        width: 100vw;
+    }
+    .dream-house .cover .price{
+        max-width: 360px;
+        left: 0rem;
+        top: 20rem;
+    }
+    .most-trending{
+        padding: 0 20px;
+        margin-top: 150px;
+    }
+    .most-trending .cards .card{
+        max-width: 320px;
+        height: 380px;
+        padding: 15px;
+    }
+    .most-trending .cards .card img{
+        max-width: 288px;
+    }
+    .most-trending .cards .card .location img{
+        width: 18px;
+        height: 18px;
+    }
+    .most-trending .cards .card .location p{
+        font-size: 12px;
+        line-height: 20px;
+        padding-bottom: 25px;
+        color: #222222;
+    }
+    .best-real{
+        padding: 0 20px;
+    }
+    .best-real ul{
+        gap: 30px;
+        overflow-x: scroll;
+    }
+    .best-real ul li{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .best-real .cards{
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .best-real .cards .card{
+        max-width: 320px;
+    }
+    .best-real .cards .card img{
+        max-width: 320px;
+    }
+    footer{
+        padding: 0 20px;
+    }
+    footer .info{
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer .info .desc{
+        max-width: 320px;
+    }
+    footer .info .desc img{
+        width: 60px;
+        height: 51px;
+    }
+    footer .copyright{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+}
