@@ -5,6 +5,19 @@
     font-family: "Inter", sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #025595; 
+    border-radius: 12px; 
+}
+
 /* start of header */
 /* start of nav */
 header nav{
@@ -14,7 +27,7 @@ header nav{
     width: 100vw;
     height: 90px;
     padding: 17px 70px;
-    background-color: #EFF8FF;
+    background-color: #EFF8FF85;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +49,13 @@ header ul li a{
     line-height: 19.36px;
     color: #222222;
     text-decoration: none;
+    padding: 10px;
+}
+
+header ul li a:hover{
+    color: #FFFFFF;
+    background-color: #025595;
+    border-radius: 4px;
 }
 
 header .login{
@@ -80,7 +100,7 @@ nav button img{
 }
 
 .hero h1{
-    max-width: 549px;
+    max-width: 550px;
     font-size: 3.75rem;
     font-weight: 700;
     line-height: 5rem;
@@ -165,39 +185,29 @@ nav button img{
     margin-top: 56px;
     display: flex;
     justify-content: space-between;
-    gap: 43px;
+    gap: 20px;
 }
 
 .how-it-work .card{
-    width: 380px;
+    max-width: 380px;
+    min-width: 260px;
     height: 255px;
     padding: 30px;
     border: none;
-    border-radius: 15px;
-}
-
-.how-it-work .select-card{
-    width: 380px;
-    height: 255px;
-    padding: 30px;
-    border: none;
-    border-radius: 15px;
+    border-radius: 16px;
+    color: #FFFFFF;
     background-color: #025595;
 }
+
 
 .how-it-work h2{
     margin: 10px 0;
     font-size: 22px;
     font-weight: 600;
     line-height: 26.63px;
-    color: #16100D;
 }
 
-.how-it-work .select-card h2{
-    color: #FFFFFF;
-}
-
-.how-it-work .select-card p{
+.how-it-work .card p{
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
@@ -231,7 +241,7 @@ nav button img{
 }
 
 .dream-house .nav button{
-    width: 137px;
+    width: 135px;
     height: 45px;
     padding: 13px 20px;
     border-radius: 6px;
@@ -296,7 +306,7 @@ nav button img{
 }
 
 .dream-house .location{
-    width: 277px;
+    width: 260px;
     padding-top: 85px;
     display: flex;
     gap: 10px;
@@ -326,21 +336,27 @@ nav button img{
 .most-trending .cards{
     margin-top: 50px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 25px;
 }
 
 .most-trending .cards .card{
-    width: 382px;
-    height: 447px;
+    max-width: 382px;
+    min-width: 260px;
     padding: 20px;
     border: none;
     border-radius: 10px;
     background-color: #DDDDDD15;
+    box-shadow: 1px 1px 10px #222222;
 }
 
 .most-trending .cards .card img{
     border-radius: 10px;
+}
+
+.most-trending .cards .card .bg{
+    width: 100%;
 }
 
 .most-trending .cards .card p{
@@ -375,8 +391,7 @@ nav button img{
 /* start of Best Real Estate Deals section */
 .best-real{
     padding: 0 70px;
-    margin-top: 6.25rem;
-}
+    margin-top: 6.25rem;}
 
 .best-real h1{
     font-size: 3.75rem;
@@ -404,9 +419,10 @@ nav button img{
     font-weight: 600;
     line-height: 22px;
     color: #222222;
+    border-bottom: 2px #FFFFFF solid;
 }
 
-.best-real ul li.blue-border{
+.best-real ul li:hover{
     color: #025595;
     border-bottom: 2px #025595 solid;
 }
@@ -420,7 +436,18 @@ nav button img{
 
 .best-real .cards .card{
     position: relative;
+    overflow: hidden;
 } 
+
+.best-real .cards .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.best-real .cards .card img:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
+}
 
 .best-real .card .buttons{
     padding-left: 15px;
@@ -448,11 +475,13 @@ footer .info{
     padding-bottom: 20px;
     border-bottom: 1px #22222210 solid; 
     display: flex;
-    gap: 70px;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 footer .info .desc{
-    width: 351px;
+    max-width: 350px;
+    min-width: 260px;
 }
 
 footer .desc p{
@@ -493,8 +522,9 @@ footer .our-location p{
     letter-spacing: 2%;
 }
 
-footer .our-location .twitter{
-    padding: 0 16px;
+.our-location a img:hover{
+    transform: rotate(360deg);
+    transition: 1.5s ease-in-out;
 }
 
 footer .copyright{
@@ -528,6 +558,9 @@ footer .copyright ul li{
 @media screen and (max-width : 992px) {
     html{
         font-size: 9px;
+    }
+    .hero h1 , .how-it-work h1 , .dream-house .nav h1 , .most-trending h1 , .best-real h1{
+        font-size: 24px;
     }
     header nav{
         padding: 10px 20px;
@@ -570,8 +603,7 @@ footer .copyright ul li{
         flex-direction: column;
         gap: 10px;
     }
-    .how-it-work .card , .how-it-work .select-card{
-        max-width: 320px;
+    .how-it-work .card {
         padding: 15px;
     }
     .dream-house .nav{
@@ -629,21 +661,12 @@ footer .copyright ul li{
         gap: 20px;
         padding: 0 20px;
     }
-    .best-real .cards .card{
-        max-width: 320px;
-    }
-    .best-real .cards .card img{
-        max-width: 320px;
-    }
     footer{
         padding: 0 20px;
     }
     footer .info{
         flex-direction: column;
         gap: 30px;
-    }
-    footer .info .desc{
-        max-width: 320px;
     }
     footer .info .desc img{
         width: 60px;
